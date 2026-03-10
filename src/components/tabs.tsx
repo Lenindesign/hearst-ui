@@ -74,7 +74,18 @@ const TabsTrigger = forwardRef<HTMLButtonElement, TabsTriggerProps>(
         data-slot="tabs-trigger"
         data-state={isActive ? "active" : "inactive"}
         aria-selected={isActive}
+        tabIndex={isActive ? 0 : -1}
         onClick={() => ctx.onValueChange(value)}
+        onKeyDown={(e) => {
+          const triggers = (e.currentTarget.parentElement?.querySelectorAll('[role="tab"]') ?? []) as NodeListOf<HTMLButtonElement>;
+          const idx = Array.from(triggers).indexOf(e.currentTarget);
+          let next = -1;
+          if (e.key === "ArrowRight") next = (idx + 1) % triggers.length;
+          else if (e.key === "ArrowLeft") next = (idx - 1 + triggers.length) % triggers.length;
+          else if (e.key === "Home") next = 0;
+          else if (e.key === "End") next = triggers.length - 1;
+          if (next >= 0) { e.preventDefault(); triggers[next].focus(); triggers[next].click(); }
+        }}
         className={cn(
           "inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
           isActive && "bg-background text-foreground shadow-sm",

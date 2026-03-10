@@ -80,9 +80,11 @@ const AccordionTrigger = forwardRef<HTMLButtonElement, AccordionTriggerProps>(
       <button
         ref={ref}
         type="button"
+        id={`accordion-trigger-${value}`}
         data-slot="accordion-trigger"
         data-state={isOpen ? "open" : "closed"}
         aria-expanded={isOpen}
+        aria-controls={`accordion-content-${value}`}
         onClick={() => toggle(value)}
         className={cn(
           "flex w-full flex-1 items-center justify-between bg-[var(--color-accordion-bg)] py-4 px-2 text-sm font-medium text-[var(--color-accordion-text)] transition-all hover:bg-[var(--color-accordion-bg-hover)] [&[data-state=open]>svg]:rotate-180",
@@ -120,8 +122,11 @@ const AccordionContent = forwardRef<HTMLDivElement, AccordionContentProps>(
     return (
       <div
         ref={ref}
+        id={`accordion-content-${value}`}
         data-slot="accordion-content"
         data-state="open"
+        role="region"
+        aria-labelledby={`accordion-trigger-${value}`}
         className={cn("overflow-hidden pb-4 pt-0 text-sm", className)}
         {...props}
       />

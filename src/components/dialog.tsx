@@ -104,6 +104,8 @@ const DialogContent = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>
           ref={ref}
           role="dialog"
           aria-modal="true"
+          aria-labelledby="dialog-title"
+          aria-describedby="dialog-description"
           data-slot="dialog-content"
           data-state="open"
           className={cn(
@@ -148,6 +150,7 @@ const DialogTitle = forwardRef<HTMLHeadingElement, HTMLAttributes<HTMLHeadingEle
     <h2
       ref={ref}
       data-slot="dialog-title"
+      id="dialog-title"
       className={cn("text-lg font-semibold leading-none tracking-tight", className)}
       {...props}
     />
@@ -159,6 +162,7 @@ const DialogDescription = forwardRef<HTMLParagraphElement, HTMLAttributes<HTMLPa
   ({ className, ...props }, ref) => (
     <p
       ref={ref}
+      id="dialog-description"
       data-slot="dialog-description"
       className={cn("text-sm text-muted-foreground", className)}
       {...props}

@@ -22,6 +22,7 @@ const Switch = forwardRef<HTMLInputElement, SwitchProps>(
         ref={ref}
         type="checkbox"
         role="switch"
+        aria-checked={checked}
         checked={checked}
         onChange={(e) => onCheckedChange?.(e.target.checked)}
         className="sr-only"
