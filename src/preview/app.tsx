@@ -27,10 +27,18 @@ import {
   ArticleCardByline,
 } from "../components/article-card";
 import { BrandLogo } from "../components/brand-logo";
+import { Navbar, NavbarLink } from "../components/navbar";
+import { Footer, FooterLinkGroup, FooterLink } from "../components/footer";
+import { Hero, HeroImage, HeroEyebrow, HeroTitle, HeroDescription, HeroActions } from "../components/hero";
+import { Byline, BylineAvatar, BylineContent, BylineName, BylineMeta, BylineBio } from "../components/byline";
+import { Newsletter } from "../components/newsletter";
+import { Pagination } from "../components/pagination";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuLabel } from "../components/dropdown-menu";
 
 function ComponentShowcase() {
   const { brand } = useTheme();
   const [switchOn, setSwitchOn] = useState(false);
+  const [currentPage, setCurrentPage] = useState(3);
 
   return (
     <div className="mx-auto max-w-5xl space-y-12 p-8">
@@ -384,6 +392,223 @@ function ComponentShowcase() {
               <ArticleCardByline>By Maria Garcia</ArticleCardByline>
             </ArticleCardBody>
           </ArticleCard>
+        </div>
+      </section>
+
+      <Separator />
+
+      {/* Navbar */}
+      <section className="space-y-4">
+        <h2 className="font-headline text-2xl font-semibold">Navbar</h2>
+        <div className="overflow-hidden rounded-lg border">
+          <Navbar
+            logo={<BrandLogo className="h-6" />}
+            actions={<Button size="sm">Subscribe</Button>}
+          >
+            <NavbarLink href="#" active>Home</NavbarLink>
+            <NavbarLink href="#">News</NavbarLink>
+            <NavbarLink href="#">Culture</NavbarLink>
+            <NavbarLink href="#">Style</NavbarLink>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="inline-flex items-center px-3 py-2 text-sm font-medium text-[var(--color-nav-text)] transition-colors hover:text-[var(--color-nav-text-hover)] rounded-md hover:bg-[var(--color-nav-text)]/5">
+                More
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuLabel>Sections</DropdownMenuLabel>
+                <DropdownMenuItem>Travel</DropdownMenuItem>
+                <DropdownMenuItem>Food</DropdownMenuItem>
+                <DropdownMenuItem>Health</DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>About</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </Navbar>
+        </div>
+      </section>
+
+      <Separator />
+
+      {/* Hero */}
+      <section className="space-y-4">
+        <h2 className="font-headline text-2xl font-semibold">Hero</h2>
+        <div className="overflow-hidden rounded-lg">
+          <Hero size="sm" overlay="medium" align="left">
+            <HeroImage src="https://picsum.photos/seed/hero1/1200/600" alt="Hero" />
+            <HeroEyebrow>Exclusive</HeroEyebrow>
+            <HeroTitle>The Stories That Define Our Time</HeroTitle>
+            <HeroDescription>
+              Discover in-depth reporting, bold perspectives, and the voices shaping culture today.
+            </HeroDescription>
+            <HeroActions>
+              <Button variant="brand" size="lg">Read More</Button>
+              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
+                Explore
+              </Button>
+            </HeroActions>
+          </Hero>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="overflow-hidden rounded-lg">
+            <Hero size="sm" overlay="brand" align="center">
+              <HeroImage src="https://picsum.photos/seed/hero2/600/400" alt="Hero" />
+              <HeroEyebrow>Brand Overlay</HeroEyebrow>
+              <HeroTitle className="text-2xl sm:text-3xl">Center Aligned</HeroTitle>
+            </Hero>
+          </div>
+          <div className="overflow-hidden rounded-lg">
+            <Hero size="sm" overlay="heavy" align="right">
+              <HeroImage src="https://picsum.photos/seed/hero3/600/400" alt="Hero" />
+              <HeroEyebrow>Feature</HeroEyebrow>
+              <HeroTitle className="text-2xl sm:text-3xl">Right Aligned</HeroTitle>
+            </Hero>
+          </div>
+        </div>
+      </section>
+
+      <Separator />
+
+      {/* Byline */}
+      <section className="space-y-4">
+        <h2 className="font-headline text-2xl font-semibold">Byline / Author</h2>
+        <div className="grid gap-6 sm:grid-cols-2">
+          <Card>
+            <CardContent className="pt-4">
+              <Byline layout="inline">
+                <BylineAvatar src="https://i.pravatar.cc/80?img=12" alt="Author" />
+                <BylineContent>
+                  <BylineName>Sarah Mitchell</BylineName>
+                  <BylineMeta>March 8, 2026 · 5 min read</BylineMeta>
+                </BylineContent>
+              </Byline>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="pt-4">
+              <Byline layout="stacked">
+                <BylineAvatar src="https://i.pravatar.cc/80?img=32" alt="Author" className="size-14" />
+                <BylineContent>
+                  <BylineName>James Rodriguez</BylineName>
+                  <BylineMeta>Senior Editor · March 8, 2026</BylineMeta>
+                  <BylineBio>
+                    James covers technology and culture for {brand.name}, with a focus on how innovation shapes everyday life.
+                  </BylineBio>
+                </BylineContent>
+              </Byline>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <Separator />
+
+      {/* Newsletter */}
+      <section className="space-y-4">
+        <h2 className="font-headline text-2xl font-semibold">Newsletter Signup</h2>
+        <Newsletter
+          variant="card"
+          heading={`Get the best of ${brand.name}`}
+          description="Sign up for our daily newsletter and never miss a story."
+          onSubscribe={async (email) => {
+            await new Promise((r) => setTimeout(r, 800));
+            console.log("Subscribed:", email);
+          }}
+        />
+        <Newsletter
+          variant="inline"
+          heading="Quick subscribe"
+          description="Enter your email to stay updated."
+        />
+      </section>
+
+      <Separator />
+
+      {/* Pagination */}
+      <section className="space-y-4">
+        <h2 className="font-headline text-2xl font-semibold">Pagination</h2>
+        <div className="flex flex-col gap-4">
+          <Pagination
+            currentPage={currentPage}
+            totalPages={12}
+            onPageChange={setCurrentPage}
+          />
+          <p className="text-sm text-muted-foreground">
+            Page {currentPage} of 12
+          </p>
+        </div>
+      </section>
+
+      <Separator />
+
+      {/* Dropdown Menu */}
+      <section className="space-y-4">
+        <h2 className="font-headline text-2xl font-semibold">Dropdown Menu</h2>
+        <div className="flex gap-4">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="inline-flex h-9 items-center justify-center rounded-button border border-[var(--color-btn-outline-border)] bg-[var(--color-btn-outline-bg)] px-4 text-sm font-medium text-[var(--color-btn-outline-text)]">
+              Options
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>Actions</DropdownMenuLabel>
+              <DropdownMenuItem>Edit</DropdownMenuItem>
+              <DropdownMenuItem>Duplicate</DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>Archive</DropdownMenuItem>
+              <DropdownMenuItem className="text-destructive">Delete</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger className="inline-flex h-9 items-center justify-center rounded-button bg-[var(--color-btn-solid-bg)] px-4 text-sm font-medium text-[var(--color-btn-solid-text)]">
+              Account
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="right">
+              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuItem>Profile</DropdownMenuItem>
+              <DropdownMenuItem>Settings</DropdownMenuItem>
+              <DropdownMenuItem>Billing</DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>Sign out</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+      </section>
+
+      <Separator />
+
+      {/* Footer */}
+      <section className="space-y-4">
+        <h2 className="font-headline text-2xl font-semibold">Footer</h2>
+        <div className="overflow-hidden rounded-lg border">
+          <Footer
+            logo={<BrandLogo className="h-8" />}
+            copyright={`© ${new Date().getFullYear()} ${brand.name}. All rights reserved. A Hearst Magazine.`}
+          >
+            <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
+              <FooterLinkGroup title="Sections">
+                <FooterLink href="#">News</FooterLink>
+                <FooterLink href="#">Culture</FooterLink>
+                <FooterLink href="#">Style</FooterLink>
+                <FooterLink href="#">Travel</FooterLink>
+              </FooterLinkGroup>
+              <FooterLinkGroup title="About">
+                <FooterLink href="#">About Us</FooterLink>
+                <FooterLink href="#">Careers</FooterLink>
+                <FooterLink href="#">Contact</FooterLink>
+                <FooterLink href="#">Advertise</FooterLink>
+              </FooterLinkGroup>
+              <FooterLinkGroup title="Legal">
+                <FooterLink href="#">Privacy Policy</FooterLink>
+                <FooterLink href="#">Terms of Use</FooterLink>
+                <FooterLink href="#">Cookie Policy</FooterLink>
+              </FooterLinkGroup>
+              <FooterLinkGroup title="Follow Us">
+                <FooterLink href="#">Instagram</FooterLink>
+                <FooterLink href="#">Twitter</FooterLink>
+                <FooterLink href="#">Facebook</FooterLink>
+                <FooterLink href="#">YouTube</FooterLink>
+              </FooterLinkGroup>
+            </div>
+          </Footer>
         </div>
       </section>
     </div>

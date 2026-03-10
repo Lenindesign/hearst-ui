@@ -95,6 +95,33 @@
   --color-modal-bg: var(--component-modal-background-primary-default, var(--background));
 
   --color-hr-border: var(--component-hr-border-default, var(--border));
+
+  /* Navigation tokens */
+  --color-nav-bg: var(--component-navigation-navbar-background-default, var(--background));
+  --color-nav-border: var(--component-navigation-navbar-border-default, var(--border));
+  --color-nav-text: var(--component-navigation-navbar-content-default, var(--foreground));
+  --color-nav-text-hover: var(--component-navigation-navbar-content-hover, var(--muted-foreground));
+  --color-nav-btn-bg: var(--component-navigation-navbar-button-background-default, var(--primary));
+  --color-nav-btn-bg-hover: var(--component-navigation-navbar-button-background-hover, var(--primary));
+  --color-nav-btn-text: var(--component-navigation-navbar-button-content-default, #ffffff);
+  --color-footer-bg: var(--component-navigation-footer-background-default, var(--background));
+  --color-footer-border: var(--component-navigation-footer-border-default, var(--border));
+  --color-footer-text: var(--component-navigation-footer-content-default, var(--foreground));
+  --color-footer-text-hover: var(--component-navigation-footer-content-hover, var(--muted-foreground));
+
+  /* Pagination tokens */
+  --color-page-bg: var(--component-pagination-background-default, transparent);
+  --color-page-bg-hover: var(--component-pagination-background-hover, var(--muted));
+  --color-page-bg-active: var(--component-pagination-background-active, var(--primary));
+  --color-page-text: var(--component-pagination-content-default, var(--foreground));
+  --color-page-text-hover: var(--component-pagination-content-hover, var(--foreground));
+  --color-page-text-active: var(--component-pagination-content-active, #ffffff);
+
+  /* Dropdown tokens */
+  --color-dropdown-bg: var(--component-dropdown-background-default, var(--background));
+  --color-dropdown-border: var(--component-dropdown-border-default, var(--border));
+  --color-dropdown-text: var(--component-dropdown-content-link-default, var(--foreground));
+  --color-dropdown-text-hover: var(--component-dropdown-content-link-hover, var(--muted-foreground));
 }
 
 :root {
