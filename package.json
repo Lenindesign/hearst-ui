@@ -32,6 +32,7 @@
     "sync-tokens": "tsx scripts/sync-tokens.ts",
     "lint": "eslint src/",
     "typecheck": "tsc --noEmit",
+    "build:site": "vite build",
     "preview": "vite preview"
   },
   "peerDependencies": {
