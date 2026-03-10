@@ -15,14 +15,14 @@
   --component-accordion-border-knockout: #757575;
   --component-accordion-content-knockout: #ffffff;
   --component-accordion-content-knockout-hover: #ffffff;
-  --component-badge-content-dager: #580a09;
-  --component-badge-content-kockout: #ffffff;
+  --component-badge-content-danger: #580a09;
+  --component-badge-content-knockout: #ffffff;
   --component-badge-content-neutral-light: #3b3b3b;
   --component-badge-content-primary: #ffffff;
   --component-badge-content-success: #063221;
   --component-badge-content-warning: #392009;
   --component-badge-icon-danger: #580a09;
-  --component-badge-icon-kockout: #ffffff;
+  --component-badge-icon-knockout: #ffffff;
   --component-badge-icon-neutral-light: #3b3b3b;
   --component-badge-icon-primary: #ffffff;
   --component-badge-icon-success: #063221;
@@ -118,7 +118,7 @@
   --component-card-core-content-recipe-gap-column-sm: 4;
   --component-card-core-content-recipe-gap-row-sm: 4;
   --component-card-core-content-recipe-padding-block-sm: 4;
-  --component-card-core-content-title-backgroud-default: transparent;
+  --component-card-core-content-title-background-default: transparent;
   --component-card-product-background-default: transparent;
   --component-card-product-border-default: transparent;
   --component-card-product-button-container-padding-inline-sm: 8;
@@ -526,7 +526,7 @@
   --component-card-collection-eeat-team-content-description-default: #000000;
   --component-card-collection-eeat-team-content-linktext-default: #000000;
   --component-card-collection-eeat-team-content-title-default: #000000;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #000000;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -852,7 +852,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -1178,7 +1178,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -1504,7 +1504,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -1830,7 +1830,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -2156,7 +2156,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #1B5F8A;
   --component-card-core-content-eyebrow-content-hover: #121212;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -2482,7 +2482,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #d70000;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #575757;
@@ -2808,7 +2808,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -3134,7 +3134,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #004685;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #004685;
@@ -3460,7 +3460,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -3786,7 +3786,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -4112,7 +4112,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -4438,7 +4438,7 @@
   --component-card-collection-eeat-team-content-description-default: #000000;
   --component-card-collection-eeat-team-content-linktext-default: #000000;
   --component-card-collection-eeat-team-content-title-default: #000000;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #000000;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -4764,7 +4764,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #9e3326;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -5090,7 +5090,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: #f0f7ff;
+  --component-card-core-content-eyebrow-background-default: #f0f7ff;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -5416,7 +5416,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -5742,7 +5742,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -6068,7 +6068,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -6394,7 +6394,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -6720,7 +6720,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -7046,7 +7046,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -7372,7 +7372,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -7698,7 +7698,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -8024,7 +8024,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -8350,7 +8350,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -8676,7 +8676,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -9002,7 +9002,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -9328,7 +9328,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #121212;
   --component-card-core-content-eyebrow-content-hover: #3b3b3b;
   --component-card-core-content-meta-content-default: #3b3b3b;
@@ -9654,7 +9654,7 @@
   --component-card-collection-eeat-team-content-description-default: #121212;
   --component-card-collection-eeat-team-content-linktext-default: #121212;
   --component-card-collection-eeat-team-content-title-default: #121212;
-  --component-card-core-content-eyebrow-backgroud-default: transparent;
+  --component-card-core-content-eyebrow-background-default: transparent;
   --component-card-core-content-eyebrow-content-default: #1d4ed8;
   --component-card-core-content-eyebrow-content-hover: #1e3a8a;
   --component-card-core-content-meta-content-default: #3b3b3b;

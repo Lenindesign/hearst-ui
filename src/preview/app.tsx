@@ -113,6 +113,7 @@ function ComponentShowcase() {
           <Badge variant="success">Success</Badge>
           <Badge variant="warning">Warning</Badge>
           <Badge variant="danger">Danger</Badge>
+          <Badge variant="highlight">Highlight</Badge>
           <Badge variant="brand">Brand</Badge>
         </div>
       </section>

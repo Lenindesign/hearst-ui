@@ -53,7 +53,7 @@ const Select = forwardRef<HTMLDivElement, SelectProps>(
           data-slot="select-trigger"
           onClick={() => setOpen(!open)}
           className={cn(
-            "flex h-9 w-full items-center justify-between rounded-md border bg-background px-3 py-2 text-sm transition-colors placeholder:text-muted-foreground focus:border-ring focus:outline-none focus:ring-[3px] focus:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50",
+            "flex h-9 w-full items-center justify-between rounded-input border-[length:var(--border-width-input)] border-[var(--color-input-border)] bg-[var(--color-input-bg)] px-3 py-2 text-sm text-[var(--color-input-text)] transition-colors placeholder:text-[var(--color-input-placeholder)] focus:border-[var(--color-input-border-active)] focus:outline-none focus:ring-[3px] focus:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50",
             error && "border-destructive",
           )}
         >

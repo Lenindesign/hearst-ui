@@ -3,22 +3,25 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../lib/utils";
 
 const badgeVariants = cva(
-  "inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-full border border-transparent px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-all [&>svg]:pointer-events-none [&>svg]:size-3",
+  "inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-badge border border-transparent px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-all [&>svg]:pointer-events-none [&>svg]:size-3",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground",
+        default:
+          "bg-[var(--color-badge-primary-bg)] text-[var(--color-badge-primary-text)]",
         secondary: "bg-secondary text-secondary-foreground",
         destructive:
-          "bg-destructive/10 text-destructive",
+          "bg-[var(--color-badge-danger-bg)] text-[var(--color-badge-danger-text)]",
         outline: "border-border text-foreground",
         ghost: "text-muted-foreground",
         success:
-          "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-400",
+          "bg-[var(--color-badge-success-bg)] text-[var(--color-badge-success-text)]",
         warning:
-          "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400",
+          "bg-[var(--color-badge-warning-bg)] text-[var(--color-badge-warning-text)]",
         danger:
-          "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400",
+          "bg-[var(--color-badge-danger-bg)] text-[var(--color-badge-danger-text)]",
+        highlight:
+          "bg-[var(--color-badge-highlight-bg)] text-[var(--color-badge-highlight-text)]",
         brand:
           "bg-brand-primary text-primary-foreground",
       },

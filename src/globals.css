@@ -30,7 +30,7 @@
 
   --font-sans: var(--font-sans);
   --font-brand: var(--font-brand);
-  --font-brand-secondary: var(--font-brand-secondary);
+  --font-brand-secondary: var(--font-brand-serif, "Georgia", serif);
   --font-headline: var(--font-family-serif-primary, var(--font-brand)), Georgia, serif;
 
   --radius-sm: calc(var(--radius) * 0.6);
@@ -41,7 +41,60 @@
 
   --color-brand-primary: var(--brand-primary, var(--primary));
 
+  /* Component-level token mappings */
   --radius-button: var(--component-button-radius-default, 0.5rem);
+  --radius-input: var(--component-input-border-radius-default, 0);
+  --radius-badge: var(--component-badge-radius-md, 8px);
+  --radius-card: var(--component-card-collection-eeat-radius-default, 0);
+
+  --color-btn-solid-bg: var(--component-button-background-primary-solid-default, var(--primary));
+  --color-btn-solid-bg-hover: var(--component-button-background-primary-solid-hover, var(--primary));
+  --color-btn-solid-text: var(--component-button-content-primary-solid-default, #ffffff);
+  --color-btn-solid-border: var(--component-button-border-primary-solid-default, transparent);
+  --color-btn-outline-bg: var(--component-button-background-primary-outlined-default, transparent);
+  --color-btn-outline-bg-hover: var(--component-button-background-primary-outlined-hover, var(--muted));
+  --color-btn-outline-text: var(--component-button-content-primary-outlined-default, var(--foreground));
+  --color-btn-outline-border: var(--component-button-border-primary-outlined-default, var(--border));
+  --color-btn-ghost-bg-hover: var(--component-button-background-neutral-transparent-hover, var(--muted));
+  --color-btn-ghost-text: var(--component-button-content-neutral-transparent-default, var(--foreground));
+  --color-btn-secondary-bg: var(--component-button-background-secondary-solid-default, var(--secondary));
+  --color-btn-secondary-bg-hover: var(--component-button-background-secondary-solid-hover, var(--secondary));
+  --color-btn-secondary-text: var(--component-button-content-secondary-solid-default, #ffffff);
+
+  --color-input-bg: var(--component-input-background-primary-outlined-default, var(--background));
+  --color-input-border: var(--component-input-border-color-primary-outlined-default, var(--border));
+  --color-input-border-active: var(--component-input-border-color-primary-outlined-active, var(--ring));
+  --color-input-border-error: var(--component-input-border-color-primary-outlined-error, var(--destructive));
+  --color-input-placeholder: var(--component-input-content-placeholder, var(--muted-foreground));
+  --color-input-text: var(--component-input-content-value, var(--foreground));
+  --border-width-input: var(--component-input-border-width-default, 1px);
+
+  --color-badge-primary-bg: var(--component-badge-background-primary, var(--primary));
+  --color-badge-primary-text: var(--component-badge-content-primary, #ffffff);
+  --color-badge-danger-bg: var(--component-badge-background-danger, #fed7d7);
+  --color-badge-danger-text: var(--component-badge-content-danger, #580a09);
+  --color-badge-success-bg: var(--component-badge-background-success, #bcf5da);
+  --color-badge-success-text: var(--component-badge-content-success, #063221);
+  --color-badge-warning-bg: var(--component-badge-background-warning, #ffe3c2);
+  --color-badge-warning-text: var(--component-badge-content-warning, #392009);
+  --color-badge-highlight-bg: var(--component-badge-background-highlight, #fdecaa);
+  --color-badge-highlight-text: var(--component-badge-content-highlight, #382b00);
+
+  --color-card-bg: var(--component-card-background-default, var(--card));
+  --color-card-border: var(--component-card-border-default, var(--border));
+  --color-card-title: var(--component-card-core-content-title-content-default, var(--card-foreground));
+  --color-card-description: var(--component-card-core-content-description-content-default, var(--muted-foreground));
+  --color-card-eyebrow: var(--component-card-core-content-eyebrow-content-default, var(--brand-primary, var(--primary)));
+  --color-card-byline: var(--component-card-core-content-author-content-default, var(--muted-foreground));
+
+  --color-accordion-bg: var(--component-accordion-background-default, transparent);
+  --color-accordion-bg-hover: var(--component-accordion-background-hover, var(--muted));
+  --color-accordion-border: var(--component-accordion-border-default, var(--border));
+  --color-accordion-text: var(--component-accordion-content-default, var(--foreground));
+
+  --color-modal-bg: var(--component-modal-background-primary-default, var(--background));
+
+  --color-hr-border: var(--component-hr-border-default, var(--border));
 }
 
 :root {

@@ -59,7 +59,7 @@ const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(
         ref={ref}
         data-slot="accordion-item"
         data-state={openItems.includes(value) ? "open" : "closed"}
-        className={cn("border-b", className)}
+        className={cn("border-b border-[var(--color-accordion-border)]", className)}
         {...props}
       />
     );
@@ -85,7 +85,7 @@ const AccordionTrigger = forwardRef<HTMLButtonElement, AccordionTriggerProps>(
         aria-expanded={isOpen}
         onClick={() => toggle(value)}
         className={cn(
-          "flex w-full flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180",
+          "flex w-full flex-1 items-center justify-between bg-[var(--color-accordion-bg)] py-4 px-2 text-sm font-medium text-[var(--color-accordion-text)] transition-all hover:bg-[var(--color-accordion-bg-hover)] [&[data-state=open]>svg]:rotate-180",
           className,
         )}
         {...props}

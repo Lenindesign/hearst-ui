@@ -76,7 +76,7 @@ const ArticleCardEyebrow = forwardRef<HTMLSpanElement, HTMLAttributes<HTMLSpanEl
       ref={ref}
       data-slot="article-card-eyebrow"
       className={cn(
-        "text-xs font-semibold uppercase tracking-wider text-brand-primary",
+        "font-brand-secondary text-xs font-semibold uppercase tracking-wider text-[var(--color-card-eyebrow)]",
         className,
       )}
       {...props}
@@ -103,7 +103,7 @@ const ArticleCardTitle = forwardRef<HTMLHeadingElement, HTMLAttributes<HTMLHeadi
       ref={ref}
       data-slot="article-card-title"
       className={cn(
-        "font-headline text-base font-bold leading-snug tracking-tight group-hover:underline",
+        "font-headline text-base font-bold leading-snug tracking-tight text-[var(--color-card-title)] group-hover:underline",
         className,
       )}
       {...props}
@@ -117,7 +117,7 @@ const ArticleCardDescription = forwardRef<HTMLParagraphElement, HTMLAttributes<H
     <p
       ref={ref}
       data-slot="article-card-description"
-      className={cn("line-clamp-2 text-sm text-muted-foreground", className)}
+      className={cn("line-clamp-2 text-sm text-[var(--color-card-description)]", className)}
       {...props}
     />
   ),
@@ -129,7 +129,7 @@ const ArticleCardByline = forwardRef<HTMLSpanElement, HTMLAttributes<HTMLSpanEle
     <span
       ref={ref}
       data-slot="article-card-byline"
-      className={cn("text-xs text-muted-foreground", className)}
+      className={cn("text-xs text-[var(--color-card-byline)]", className)}
       {...props}
     />
   ),
