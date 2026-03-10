@@ -1,0 +1,164 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "hearst-ui",
+  "homepage": "https://github.com/leninaviles/hearst-ui",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "Multi-variant button with brand theming support",
+      "files": [{ "path": "src/components/button.tsx", "type": "registry:ui" }],
+      "dependencies": ["class-variance-authority"]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Inline status indicator with brand variant",
+      "files": [{ "path": "src/components/badge.tsx", "type": "registry:ui" }],
+      "dependencies": ["class-variance-authority"]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "Container card with header, content, and footer slots",
+      "files": [{ "path": "src/components/card.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Text input with size variants and error state",
+      "files": [{ "path": "src/components/input.tsx", "type": "registry:ui" }],
+      "dependencies": ["class-variance-authority"]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "Form label",
+      "files": [{ "path": "src/components/label.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "Multi-line text input",
+      "files": [{ "path": "src/components/textarea.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "Visual divider between content sections",
+      "files": [{ "path": "src/components/separator.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "User avatar with image and fallback",
+      "files": [{ "path": "src/components/avatar.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "Toggle switch control",
+      "files": [{ "path": "src/components/switch.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "Dropdown select with options",
+      "files": [{ "path": "src/components/select.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Tabbed content navigation",
+      "files": [{ "path": "src/components/tabs.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "Collapsible content sections",
+      "files": [{ "path": "src/components/accordion.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "Feedback alert with variants",
+      "files": [{ "path": "src/components/alert.tsx", "type": "registry:ui" }],
+      "dependencies": ["class-variance-authority"]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "Modal dialog with overlay",
+      "files": [{ "path": "src/components/dialog.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Hover tooltip with positioning",
+      "files": [{ "path": "src/components/tooltip.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Loading placeholder animation",
+      "files": [{ "path": "src/components/skeleton.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "Constrained aspect ratio container",
+      "files": [{ "path": "src/components/aspect-ratio.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "article-card",
+      "type": "registry:ui",
+      "title": "Article Card",
+      "description": "Editorial article card with eyebrow, image, title, and byline — Hearst-specific",
+      "files": [{ "path": "src/components/article-card.tsx", "type": "registry:ui" }],
+      "dependencies": ["class-variance-authority"]
+    },
+    {
+      "name": "brand-switcher",
+      "type": "registry:ui",
+      "title": "Brand Switcher",
+      "description": "Dropdown to switch between Hearst brand themes at runtime",
+      "files": [{ "path": "src/components/brand-switcher.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "brand-logo",
+      "type": "registry:ui",
+      "title": "Brand Logo",
+      "description": "Renders the current brand's SVG logo with text fallback",
+      "files": [{ "path": "src/components/brand-logo.tsx", "type": "registry:ui" }]
+    },
+    {
+      "name": "theme-provider",
+      "type": "registry:lib",
+      "title": "Theme Provider",
+      "description": "HearstProvider context for multi-brand theming with Google Fonts",
+      "files": [
+        { "path": "src/lib/theme-provider.tsx", "type": "registry:lib" },
+        { "path": "src/lib/brands.ts", "type": "registry:lib" },
+        { "path": "src/lib/utils.ts", "type": "registry:lib" }
+      ],
+      "dependencies": ["clsx", "tailwind-merge"]
+    }
+  ]
+}
