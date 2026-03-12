@@ -13,37 +13,7 @@ export interface BrandTheme {
   componentTokens: Record<string, string | number>;
 }
 
-const BRAND_HEADLINES: Record<string, string> = {
-  "white-label": "SF Pro",
-  "autoweek": "SF Pro",
-  "best-products": "SF Pro",
-  "bicycling": "SF Pro",
-  "biography": "SF Pro",
-  "car-and-driver": "Barlow Condensed",
-  "cosmopolitan": "Chronicle Display",
-  "country-living": "Lora",
-  "delish": "PlayfairDisplay",
-  "elle": "SF Pro",
-  "elle-decor": "Modern MT Pro",
-  "esquire": "PlayFair",
-  "fre": "SF Pro",
-  "good-housekeeping": "Shippori Mincho",
-  "harpers-bazaar": "NewParis Text",
-  "house-beautiful": "Apparel Display",
-  "mens-health": "SF Pro",
-  "oprah-daily": "SF Pro",
-  "popular-mechanics": "SF Pro",
-  "prevention": "SF Pro",
-  "redbook": "SF Pro",
-  "road-and-track": "SF Pro",
-  "runners-world": "SF Pro",
-  "seventeen": "SF Pro",
-  "the-pioneer-woman": "SF Pro",
-  "town-and-country": "Petrona",
-  "veranda": "NewParis Text",
-  "womans-day": "SF Pro",
-  "womens-health": "Apparel",
-};
+const BRAND_HEADLINE = "Chronicle Display";
 
 const BRAND_LOGOS: Record<string, string> = {
   "white-label": "",
@@ -344,5 +314,5 @@ const _brands: Omit<BrandTheme, "logo" | "fontHeadline">[] = [
 export const brands: BrandTheme[] = _brands.map((b) => ({
   ...b,
   logo: BRAND_LOGOS[b.slug] || null,
-  fontHeadline: BRAND_HEADLINES[b.slug] || b.fontSecondary,
+  fontHeadline: BRAND_HEADLINE,
 }));

@@ -88,7 +88,7 @@ const HeroTitle = forwardRef<HTMLHeadingElement, HTMLAttributes<HTMLHeadingEleme
       ref={ref}
       data-slot="hero-title"
       className={cn(
-        "font-headline text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl",
+        "font-headline text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl",
         className,
       )}
       {...props}

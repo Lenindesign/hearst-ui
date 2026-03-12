@@ -103,7 +103,7 @@ const ArticleCardTitle = forwardRef<HTMLHeadingElement, HTMLAttributes<HTMLHeadi
       ref={ref}
       data-slot="article-card-title"
       className={cn(
-        "font-headline text-base font-bold leading-snug tracking-tight text-[var(--color-card-title)] group-hover:underline",
+        "font-headline text-base font-semibold leading-snug tracking-tight text-[var(--color-card-title)] group-hover:underline",
         className,
       )}
       {...props}

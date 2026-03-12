@@ -88,6 +88,7 @@ function brandToCssVars(brand: BrandTheme): Record<string, string> {
     "--chart-5": hexToOklch(brand.colors["5"] || primary),
     "--font-brand": `"${brand.fontDefault}", system-ui, sans-serif`,
     "--font-brand-secondary": `"${brand.fontSecondary}", Georgia, serif`,
+    "--font-headline": `"${brand.fontHeadline}", Georgia, serif`,
   };
 }
 

@@ -35,7 +35,7 @@ const CardTitle = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
     <div
       ref={ref}
       data-slot="card-title"
-      className={cn("font-headline text-base leading-snug font-medium text-[var(--color-card-title)]", className)}
+      className={cn("font-headline text-base leading-snug font-semibold text-[var(--color-card-title)]", className)}
       {...props}
     />
   ),

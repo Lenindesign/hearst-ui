@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./lib/tokens.css";
+@import url("/fonts/chronicle-display.css");
 
 @custom-variant dark (&:is(.dark *));
 
@@ -31,7 +32,7 @@
   --font-sans: var(--font-sans);
   --font-brand: var(--font-brand);
   --font-brand-secondary: var(--font-brand-serif, "Georgia", serif);
-  --font-headline: var(--font-family-serif-primary, var(--font-brand)), Georgia, serif;
+  --font-headline: var(--font-headline, "Chronicle Display", Georgia, serif);
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
