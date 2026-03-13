@@ -59,7 +59,7 @@ const Newsletter = forwardRef<HTMLDivElement, NewsletterProps>(
       >
         <div className={cn(variant === "inline" ? "flex flex-wrap items-end gap-4" : "space-y-4")}>
           <div className={cn(variant === "inline" ? "flex-1" : "")}>
-            <h3 className="font-headline text-lg font-semibold text-[var(--color-card-title)]">
+            <h3 className="headline text-lg text-[var(--color-card-title)]">
               {heading}
             </h3>
             <p className="mt-1 text-sm text-[var(--color-card-description)]">{description}</p>

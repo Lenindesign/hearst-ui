@@ -9,40 +9,26 @@ export interface BrandTheme {
   fontDefault: string;
   fontSecondary: string;
   fontHeadline: string;
+  fontHeadlineWeight: number;
   semanticColors: Record<string, string>;
   componentTokens: Record<string, string | number>;
 }
 
-const BRAND_HEADLINES: Record<string, string> = {
-  "white-label": "SF Pro",
-  "autoweek": "SF Pro",
-  "best-products": "SF Pro",
-  "bicycling": "SF Pro",
-  "biography": "SF Pro",
-  "car-and-driver": "Barlow Condensed",
-  "cosmopolitan": "Chronicle Display",
-  "country-living": "Lora",
-  "delish": "PlayfairDisplay",
-  "elle": "SF Pro",
-  "elle-decor": "Modern MT Pro",
-  "esquire": "PlayFair",
-  "fre": "SF Pro",
-  "good-housekeeping": "Shippori Mincho",
-  "harpers-bazaar": "NewParis Text",
-  "house-beautiful": "Apparel Display",
-  "mens-health": "SF Pro",
-  "oprah-daily": "SF Pro",
-  "popular-mechanics": "SF Pro",
-  "prevention": "SF Pro",
-  "redbook": "SF Pro",
-  "road-and-track": "SF Pro",
-  "runners-world": "SF Pro",
-  "seventeen": "SF Pro",
-  "the-pioneer-woman": "SF Pro",
-  "town-and-country": "Petrona",
-  "veranda": "NewParis Text",
-  "womans-day": "SF Pro",
-  "womens-health": "Apparel",
+const BRAND_HEADLINES: Record<string, [string, number]> = {
+  "car-and-driver": ["Inter", 800],
+  "cosmopolitan": ["Chronicle Display", 600],
+  "country-living": ["Montserrat", 700],
+  "delish": ["TT Commons Pro", 700],
+  "elle": ["Neue Haas Unica Pro", 700],
+  "esquire": ["Lausanne", 400],
+  "good-housekeeping": ["Barlow Semi Condensed", 700],
+  "harpers-bazaar": ["Helvetica Now Text", 700],
+  "house-beautiful": ["Visuelt Pro", 700],
+  "mens-health": ["Manrope", 700],
+  "prevention": ["Poppins", 700],
+  "the-pioneer-woman": ["Livvic", 700],
+  "town-and-country": ["Montserrat", 700],
+  "womens-health": ["Altone", 700],
 };
 
 const BRAND_LOGOS: Record<string, string> = {
@@ -341,8 +327,12 @@ const _brands: Omit<BrandTheme, "logo" | "fontHeadline">[] = [
   },
 ];
 
-export const brands: BrandTheme[] = _brands.map((b) => ({
-  ...b,
-  logo: BRAND_LOGOS[b.slug] || null,
-  fontHeadline: BRAND_HEADLINES[b.slug] || b.fontSecondary,
-}));
+export const brands: BrandTheme[] = _brands.map((b) => {
+  const hl = BRAND_HEADLINES[b.slug];
+  return {
+    ...b,
+    logo: BRAND_LOGOS[b.slug] || null,
+    fontHeadline: hl ? hl[0] : b.fontDefault,
+    fontHeadlineWeight: hl ? hl[1] : 700,
+  };
+});

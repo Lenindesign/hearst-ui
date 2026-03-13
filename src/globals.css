@@ -1,16 +1,6 @@
 @import "tailwindcss";
 @import "./lib/tokens.css";
 
-@font-face {
-  font-family: "Chronicle Display";
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src:
-    url("/fonts/ChronicleDisplay-Semibold.woff2") format("woff2"),
-    url("/fonts/ChronicleDisplay-Semibold.woff") format("woff");
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -41,7 +31,7 @@
   --font-sans: var(--font-sans);
   --font-brand: var(--font-brand);
   --font-brand-secondary: var(--font-brand-serif, "Georgia", serif);
-  --font-headline: var(--font-headline, "Chronicle Display", Georgia, serif);
+  --font-headline: var(--font-headline, system-ui, sans-serif);
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -192,5 +182,12 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .headline {
+    font-family: var(--font-headline, system-ui);
+    font-weight: var(--font-headline-weight, 700);
   }
 }

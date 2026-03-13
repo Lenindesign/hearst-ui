@@ -69,7 +69,7 @@ export function DemoSection({
   return (
     <section id={id} className="scroll-mt-20 space-y-4">
       <div>
-        <h2 className="font-headline text-2xl font-semibold">{title}</h2>
+        <h2 className="headline text-2xl">{title}</h2>
         {description && (
           <p className="mt-1 text-sm text-muted-foreground">{description}</p>
         )}
